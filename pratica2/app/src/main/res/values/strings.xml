@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">pratica2</string>
+    <string name="name_text">Nome:</string>
+    <string name="age_text">Idade:</string>
+    <string name="weight_text">Peso (em kg):</string>
+    <string name="height_text">Altura (em metros):</string>
+    <string name="report_text">Relatorio Nutricional:</string>
+    <string name="report_weight_text">Peso:</string>
+    <string name="report_height_text">Altura:</string>
+    <string name="bmi_text">IMC:</string>
+    <string name="classification_text">Classificacao:</string>
+    <string name="bmi1_text">Abaixo do Peso</string>
+    <string name="bmi2_text">Saudavel</string>
+    <string name="bmi3_text">Sobrepeso</string>
+    <string name="bmi4_text">Obesidade Grau I</string>
+    <string name="bmi5_text">Obesidade Grau II</string>
+    <string name="bmi6_text">Obesidade Grau III</string>
+    <string name="new_text">Realizar novo calculo</string>
+    <string name="hint_nome">nome</string>
+    <string name="hint_idade">idade</string>
+    <string name="hint_peso">peso</string>
+    <string name="hint_altura">altura</string>
+    <string name="hint_imc">imc</string>
+    <string name="hint_classificacao">classificacao</string>
+</resources>

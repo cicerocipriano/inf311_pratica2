@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_margin="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/reportBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/report_text"
+        android:textStyle="italic"
+        android:typeface="sans"
+        android:textSize="15pt"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/reportNameBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_text"
+        android:layout_below="@id/reportBox"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="10pt"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/resNameBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reportBox"
+        android:hint="@string/hint_nome"
+        android:layout_toEndOf="@id/reportNameBox"
+        android:layout_marginStart="20dp"
+        android:textStyle="normal"
+        android:typeface="sans"
+        android:textSize="10pt"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/reportAgeBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age_text"
+        android:layout_below="@id/reportNameBox"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="10pt"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/resAgeBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reportNameBox"
+        android:hint="@string/hint_idade"
+        android:layout_toEndOf="@id/reportAgeBox"
+        android:layout_marginStart="20dp"
+        android:textStyle="normal"
+        android:typeface="sans"
+        android:textSize="8pt"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/reportWeightBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/report_weight_text"
+        android:layout_below="@id/reportAgeBox"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="10pt"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/resWeightBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reportAgeBox"
+        android:hint="@string/hint_peso"
+        android:layout_toEndOf="@id/reportWeightBox"
+        android:layout_marginStart="20dp"
+        android:textStyle="normal"
+        android:typeface="sans"
+        android:textSize="8pt"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/reportHeightBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/report_height_text"
+        android:layout_below="@id/reportWeightBox"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="10pt"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/resHeightBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reportWeightBox"
+        android:hint="@string/hint_altura"
+        android:layout_toEndOf="@id/reportHeightBox"
+        android:layout_marginStart="20dp"
+        android:textStyle="normal"
+        android:typeface="sans"
+        android:textSize="8pt"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/reportBmiBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bmi_text"
+        android:layout_below="@id/reportHeightBox"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="10pt"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/resBmiBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reportHeightBox"
+        android:hint="@string/hint_imc"
+        android:layout_toEndOf="@id/reportBmiBox"
+        android:layout_marginStart="20dp"
+        android:textStyle="normal"
+        android:typeface="sans"
+        android:textSize="8pt"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/classificationBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/classification_text"
+        android:layout_below="@id/reportBmiBox"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="10pt"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/resClassificationBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reportBmiBox"
+        android:hint="@string/hint_classificacao"
+        android:layout_toEndOf="@id/classificationBox"
+        android:layout_marginStart="20dp"
+        android:textStyle="normal"
+        android:typeface="sans"
+        android:textSize="8pt"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/returnButtton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_text"
+        android:textSize="10pt"
+        android:layout_marginTop="175dp"
+        android:layout_below="@id/classificationBox"/>
+
+</RelativeLayout>

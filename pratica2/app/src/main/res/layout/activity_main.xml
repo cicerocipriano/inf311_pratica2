@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_margin="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nameBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_text"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="7pt"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/nameInserter"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/nameBox"
+        android:layout_marginBottom="60dp"/>
+
+    <TextView
+        android:id="@+id/ageBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age_text"
+        android:layout_below="@id/nameInserter"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="7pt"/>
+
+    <TextView
+        android:id="@+id/weightBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weight_text"
+        android:layout_below="@id/nameInserter"
+        android:layout_toEndOf="@id/ageBox"
+        android:layout_marginEnd="15dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="7pt"/>
+
+    <TextView
+        android:id="@+id/heightBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/height_text"
+        android:layout_below="@id/nameInserter"
+        android:layout_toEndOf="@id/weightBox"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="7pt"/>
+
+    <EditText
+        android:id="@+id/ageInserter"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/ageBox"
+        android:layout_alignStart="@+id/ageBox"
+        android:layout_alignEnd="@+id/ageBox"/>
+
+    <EditText
+        android:id="@+id/weightInserter"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/weightBox"
+        android:layout_alignStart="@+id/weightBox"
+        android:layout_alignEnd="@+id/weightBox"/>
+
+    <EditText
+        android:id="@+id/heightInserter"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/heightBox"
+        android:layout_alignStart="@+id/heightBox"
+        android:layout_alignEnd="@+id/heightBox"/>
+
+    <Button
+        android:id="@+id/reportButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/report_text"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="15pt"
+        android:layout_marginTop="250dp"
+        android:layout_below="@+id/heightInserter"
+        />
+
+</RelativeLayout>
